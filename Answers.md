@@ -3,36 +3,38 @@
 
 ~2.5 - 3h including tea breaks
 
-and extra ~2-3 hours to unswer all questions
+and extra ~3-4 hours to unswer all questions
 
 # What would you change / implement in your application given more time?
-* __Tests: Full scenario tests (as in AC).__
-As far as I understand, you use SpecFlow + Selenium for this, so I should study Selenium )
+* __Tests: End to end tests (as in acceptance criteria).__
+As far as I understand, you use SpecFlow + Selenium for this, so I should study Selenium.
 * __Tests: Controller tests__
 I have used DI – but had no time to use it in test
-* __Tests: refactoring__, more data, “wrong data” tests
+So, I want to add Unit Tests for controllers
+* __Tests: more data__
+add more positive scenarios, add negative scenarios (they are missed now)
 * __UI: Styles__
 Unfortunately, I have run out of time, so only simple UI is applied.
 It must be scalable, optimized for mobile devices (I hope most users of this service will be mobile users)
 * __UI: Validation__
 I should add validation messages about wrong input data.
-* __UI: Ajax__
-Ajax is good, but I should add another (non-ajax) behaviour to cover the situation js is disabled in the browser
+For example, if user does not select the category, he should observe the warning message.
+And for the _int_ input we can use data annotation in Model for validation.
 * __UI: handle invalid Images__
 Investigate and fix the “no image” issue
 * __Business: Validation and error handling__
-More proper way of xml parsing (++ test different incorrect inputs)
-Add valid error pages (I did not change the default one)
+More proper way of xml parsing.
+Do not use _First()_ without checking the existense (++ add more tests)
 * __Common: more layers__
 Move different parts of logic to different layers (projects)
 For example, 
-PicViewerCommon – [Entities] folder
+PicViewerContracts – [Entities] folder + interfaces
 PicViewerBusiness – [Convertors] folder
 PicViewerServices – [APIAccess] folder
-* __Total code refactoring__
+* __Total code cleanup__
 To decrease the dev time I selected one of the MVC templates, I should remove all unnecessary code.
 * __Business: MVC__
-Move logic of data retrieving from Controller to Model
+Move logic of data retrieving (business logic) from Controller to Model, to better match MVC pattern 
 
 # Did you use IOC? Please explain your reasons either way.
 Yes, I used IOC for service calls.
@@ -48,12 +50,13 @@ It depends on the type of the issue:
 # What improvements would you make to the cat API?
 Category API:
 * The cat list should be just http://thecatapi.com/api/categories
-* So, no “list” at the end
+	* So, no “list” at the end
+
 Images API:
 * The link should be http://thecatapi.com/api/categories/dream/images?results_per_page=10
-* Name of category moved to another place
-* "get" is not required in the link
-* As far as I understand format is always xml, so do we really need this parameter?
+	* Name of category moved to another place
+	* "get" is not required in the link
+	* As far as I understand format is always xml, so do we really need this parameter?
 
 # What are you two favourite frameworks for .Net?
 
