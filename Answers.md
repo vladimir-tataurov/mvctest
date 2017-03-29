@@ -74,26 +74,22 @@ Unfortunately, I have not found any brand new .Net features (since 4.5) what are
 
 # Describe yourself in JSON.
 {
-  "name": "Vladimir Tataurov",
-  "birth": {
-	    "day": 3,
-	    "month": 4,
-      "year": 1984,
-	  },
+   "name": "Vladimir Tataurov",
+   "age": 23,
    "gender": "Male",
    "education": {
-       "university": {
+      "university": {
 		"name": "StPetersburg State University",
 		"graduation_year": 2000,
 		"grade": "Master of computer science"
    },
    "interests": {
-       "dancing":[
+      "dancing":[
 		“Waltz”,
 		“Salsa”,
 		“Bachata”
 		],
-       "sport":[
+      "sport":[
 		“Skiing”,
 		“Climbing”
 		],
