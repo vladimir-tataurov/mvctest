@@ -82,6 +82,7 @@ Unfortunately, I have not found any brand new .Net features (since 4.5) what are
 		"name": "StPetersburg State University",
 		"graduation_year": 2000,
 		"grade": "Master of computer science"
+      }
    },
    "interests": {
       "dancing":[
