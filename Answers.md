@@ -3,7 +3,7 @@
 
 ~2.5 - 3h including tea breaks
 
-and extra ~3-4 hours to unswer all questions
+and extra ~3-4 hours to answer all questions
 
 # What would you change / implement in your application given more time?
 * __Tests: End to end tests (as in acceptance criteria).__
@@ -40,6 +40,8 @@ Move logic of data retrieving (business logic) from Controller to Model, to bett
 Yes, I used IOC for service calls.
 Reason –write tests without actual calling of services.
 But I should refactor it a little bit (to make the ICategoriesService categoriesService not public )
+
+And, yes, DI is commonly used to decouple different modules, so in our case we can easily change the data access service we use.
 
 # How would you debug an issue in production code?
 It depends on the type of the issue:
