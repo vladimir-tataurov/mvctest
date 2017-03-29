@@ -44,8 +44,8 @@ But I should refactor it a little bit (to make the ICategoriesService categories
 # How would you debug an issue in production code?
 It depends on the type of the issue:
 * Slow performance – we should measure and improve the performance
-* Application crushes with a particular exception – review the exceptions, try to reproduce on dev environment, fix
-* Application does not work at all – check prod environment
+* Application crushes with a particular exception – review the exceptions (from logs / event viewver), try to reproduce on dev environment, fix
+* Problems with installer - review install logs, find the issue, fix it.
 
 # What improvements would you make to the cat API?
 Category API:
@@ -65,12 +65,16 @@ Even more, may be it is a good idea to re-do this test task on the .NET Core to 
 
 And if this question is about favorite tools (Nuget packages), then
 * Entity Framework as favorite ORM
-* MsTest as favorite unit testing framework (may be, this will changes to SpecFlow soon)
+* SpecFlow is now favorite unit testing framework (MS Test was used on previous project)
 * Knockoutjs as a js tool 
 
 # What is your favourite new feature in .Net?
 Unfortunately, I have not found any brand new .Net features (since 4.5) what are related to my everyday work.
 
+Not so new features I like in .NET are:
+* Linq is realy cool, especially method syntax, use it almost everywhere.
+* async - await for easy asyncronous programming
+* ORM (like Entity Framework) for quick start with new project
 
 # Describe yourself in JSON.
 {
