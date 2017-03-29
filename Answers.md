@@ -79,32 +79,33 @@ Not so new features I like in .NET are:
 * ORM (like Entity Framework) for quick start with new project
 
 # Describe yourself in JSON.
+```
 {
    "name": "Vladimir Tataurov",
    "age": 23,
    "gender": "Male",
    "education": {
       "university": {
-		"name": "StPetersburg State University",
-		"graduation_year": 2000,
-		"grade": "Master of computer science"
+         "name": "StPetersburg State University",
+	 "graduation_year": 2000,
+	 "grade": "Master of computer science"
       }
    },
    "interests": {
-      "dancing":[
-		“Waltz”,
-		“Salsa”,
-		“Bachata”
-		],
-      "sport":[
-		“Skiing”,
-		“Climbing”
-		],
-	     "technologies":[
-		“.Net”,
-		“SQL”,
-		“js”
-		]
+      "dancing": [
+         “Waltz”,
+	 “Salsa”,
+	 “Bachata”
+      ],
+      "sport": [
+         "Skiing",
+	 "Climbing"
+      ],
+      "technologies": [
+         ".Net",
+	 "SQL",
+	 "js"
+      ]
    }
 }
-
+```
